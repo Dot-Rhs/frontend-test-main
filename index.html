@@ -1,51 +1,63 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./assets/css/styles.css" />
+	</head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap"
-		rel="stylesheet">
-	<link rel="stylesheet" href="./assets/css/styles.css" />
-</head>
+	<!-- Could swap out <div> for <section> for semantics -->
+	<!-- aria-labels -->
+	<!-- alt text on images (accesibility) -->
+	<!-- Could do some SEO optimisation in the meta tags https://ahrefs.com/blog/seo-meta-tags/,
+	 https://developers.google.com/search/docs/advanced/crawling/special-tags -->
 
-<body>
-	<div id="wrap">
-		<header id="logo"><!-- Changed to relevant semantic tag (header)-->
-			<img src="./assets/svg/logo.svg"/>
-		</header>
-		<div id="hamburger" role="button">
-			<img id="burger" src="./assets/svg/icon-hamburger.svg" />
-			<img id="cross" src="./assets/svg/icon-close.svg" />
-		</div>
-		<nav id="navigation" class="call-to-action"><!-- Changed to relevant semantic tag (nav)-->
-			<a href="#"><b>PRODUCT</b></a>
-			<a href="#"><b>FEATURES</b></a>
-			<a href="#"><b>PRICING</b></a>
-			<span></span>
-			<a href="#" class="light-grey"><b>LOGIN</b></a>
-		</nav>
-
-		<div id="screens">
-			<img src="./assets/svg/illustration-devices.svg" />
-		</div>
-		<main id="main"><!-- Changed to relevant semantic tag (main)-->
-
-			<h1 class="call-to-action light-grey small"><span class="dark call-to-action bold">New</span><!--Replaced <b> with CSS font weight property as it is purely for styling purposes > https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b-->
-				Monograph Dashboard</h1>
-
-			<p class="call-to-action">Powerful insights into your team</p>
-			<p>Project planning and time tracking for agile teams</p>
-
-			<div class="small call-to-action light-grey"><a href="#" class="call-to-action btn"><b>CLICK HERE</b></a>
-				<span style="letter-spacing: 2px;">to see a preview</span>
+	<body>
+		<div id="wrap">
+			<header id="logo">
+				<!-- Changed to relevant semantic tag (header)-->
+				<img src="./assets/svg/logo.svg" />
+			</header>
+			<div id="hamburger" role="button">
+				<img id="burger" src="./assets/svg/icon-hamburger.svg" />
+				<img id="cross" src="./assets/svg/icon-close.svg" />
 			</div>
-		</main>
+			<nav id="navigation" class="call-to-action">
+				<!-- Changed to relevant semantic tag (nav)-->
+				<a href="#"><b>PRODUCT</b></a>
+				<a href="#"><b>FEATURES</b></a>
+				<a href="#"><b>PRICING</b></a>
+				<span></span>
+				<a href="#" class="light-grey"><b>LOGIN</b></a>
+			</nav>
 
-	</div>
-	<script src="./assets/js/main.js"></script>
-</body>
+			<div id="screens">
+				<img src="./assets/svg/illustration-devices.svg" />
+			</div>
+			<main id="main">
+				<!-- Changed to relevant semantic tag (main)-->
 
+				<h1 class="call-to-action light-grey small">
+					<span class="dark call-to-action bold">New</span
+					><!--Replaced <b> with CSS font weight property as it is purely for styling purposes > https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b-->
+					Monograph Dashboard
+				</h1>
+
+				<p class="call-to-action">Powerful insights into your team</p>
+				<p>Project planning and time tracking for agile teams</p>
+
+				<div class="small call-to-action light-grey">
+					<a href="#" class="call-to-action btn"><b>CLICK HERE</b></a>
+					<span style="letter-spacing: 2px">to see a preview</span>
+				</div>
+			</main>
+		</div>
+		<script src="./assets/js/main.js"></script>
+	</body>
 </html>
